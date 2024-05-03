@@ -37,6 +37,7 @@ public class HexCodeGen {
         }
         return hex;
     }
+
     public static String hexCode(ArrayList<Integer> numbers) {
         String hex = "#";
         for (int i : numbers) {
