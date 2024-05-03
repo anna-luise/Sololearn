@@ -78,7 +78,7 @@ public class PokerHand {
     }
     public static boolean straight(ArrayList<String> values) {
         for (int i = 0; i < values.size()-1; i++) {
-            if (Integer.valueOf(values.get(i))+1 != Integer.valueOf(values.get(i+1))  ) {
+            if (Integer.parseInt(values.get(i)) + 1 != Integer.parseInt(values.get(i + 1))) {
                 return false;
             }
         }

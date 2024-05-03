@@ -9,8 +9,8 @@ import java.util.Scanner;
             input = input.replaceAll("\\?", "");
             String[] words = input.split(" ");
             double sum = 0;
-            for (int i = 0; i < words.length; i++) {
-                sum += words[i].length();
+            for (String word : words) {
+                sum += word.length();
             }
             System.out.println((int) Math.round(sum / words.length));
         

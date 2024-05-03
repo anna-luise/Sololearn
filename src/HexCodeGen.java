@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.zip.CheckedInputStream;
 
 public class HexCodeGen {
     
@@ -41,7 +40,7 @@ public class HexCodeGen {
     public static String hexCode(ArrayList<Integer> numbers) {
         String hex = "#";
         for (int i : numbers) {
-            hex = hex + (decimalToHex(i));
+            hex += (decimalToHex(i));
         }
         return hex;
     }
