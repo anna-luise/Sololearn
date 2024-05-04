@@ -3,8 +3,9 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class PokerHand {
+
+    private static final int LAST_INDEX = 4;
     
-   private static final int LAST_INDEX = 4;
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
@@ -26,8 +27,8 @@ public class PokerHand {
                 default: break;
             }
         }
-        
         values.sort(Comparator.naturalOrder());
+
         if (royalFlush(values, suites)) {
             res = "royal flush";
         }
@@ -105,6 +106,7 @@ public class PokerHand {
         return(count);
     }
 }
+     
 /*  royal flush irgendwo 10, J, Q, K, A
     Straight flush: a = b+/-1, b = c+/-1, c = d+/-1, d = e+/-1 && same suits
     Four of a kind: 4 same values

@@ -8,11 +8,8 @@ public class HexCodeGen {
         ArrayList<Integer> numbers = new ArrayList<>();
         
         String input;
-        while (!(input = scanner.nextLine()).isEmpty()) {
+        while (!(input = scanner.nextLine()).equalsIgnoreCase("")) {
             numbers.add(Integer.valueOf(input));
-        }
-        for (int i = 0; i < 3; i++) {
-            numbers.add(scanner.nextInt());
         }
         scanner.close();
         System.out.println(hexCode(numbers));
