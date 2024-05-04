@@ -18,7 +18,6 @@ public class PokerHand {
             suites.add(String.valueOf(word.charAt(word.length()-1)));
             values.add(word.substring(0, word.length()-1));
         }
-        3,
         for (String value : values) {
             switch (value){
                 case "J": values.set(values.indexOf(value), "11"); break;
