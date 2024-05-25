@@ -6,8 +6,8 @@ public class Argentina {
         Scanner scanner = new Scanner(System.in);
         int pesos = Integer.parseInt(scanner.nextLine());
         int dolares = Integer.parseInt(scanner.nextLine());
-        double persoInDolares = pesos * 0.02;
-        if (persoInDolares > dolares) {
+        double pesosInDollars = pesos * 0.02;
+        if (pesosInDollars > dolares) {
             System.out.println("Dollars");
         } else {
             System.out.println("Pesos");
